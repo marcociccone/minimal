@@ -6,7 +6,7 @@ This is the raw HTML and styles that are used for the *minimal* theme on [GitHub
 
 Syntax highlighting is provided on GitHub Pages by [Pygments](http://pygments.org).
 
-Slight changes in this version from the <a href="https://github.com/orderedlist/minimal">original</a>, primarily in _extra_min_styles.css_.
+Slight changes in this version from the <a href="https://github.com/orderedlist/minimal">original</a>, primarily in _stylesheets/extra_min_styles.css_.
 
 # License
 
