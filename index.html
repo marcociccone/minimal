@@ -1,79 +1,55 @@
 ---
 title: Home
+layout: default
 ---
+<h3>Welcome!</h3>
+<p> I am who I am. </p>
 
-<!doctype html>
-<html>
-    <!-- INCLUDE CSS etc-->
-    {% include head.html %}
+<!-- NEWS -->
+{% include news.html %}
 
-    <!-- ALL CONTENT -->
-    <div class="wrapper">
-    <!-- BODY -->
-    <body>
+<!-- INTERESTS -->
+<h3> Interests </h3>
+<p> So many. </p>
 
-    <!-- HEADER and NAV-->
-    {% include header.html %}
+<!-- FEATURED PUBLICATIONS -->
+<h3> Featured Work </h3>
+<table style="margin-top:-12px;">
 
-    <!-- BODY -->
-    <section>
-        <h3>Welcome!</h3>
-        <p> I am who I am. </p>
+    <!-- Work -->
+    <tr style="border-bottom:1px solid #e5e5e5;">
+        <!-- IMAGE -->
+        <td>
+            <img class="workPicture" src="images/thesis_overview.jpg" alt="Thesis overview">
+        </td>
 
-        <!-- NEWS -->
-        {% include news.html %}
+        <!-- TITLE AND INFO -->
+        <td>
+            <br>
+            <div id="indexWorkText">
+                <!-- Title + Link -->
+                <b><a href="thesis.pdf" onclick="_gaq.push(['_trackEvent', 'Click', 'Thesis (b) Clicked']);">Cool stuff</a></b>
+                <br>
+                <i>Ph.D Thesis, 2020</i>
+            </div>
+            <br>
+            <!-- One sentence description -->
+            <div id="indexWorkText">
+                A very Valuable Contribution
+            </div>
+            <br>
 
-        <!-- INTERESTS -->
-        <h3> Interests </h3>
-        <p> So many. </p>
-
-        <!-- FEATURED PUBLICATIONS -->
-        <h3> Featured Work </h3>
-        <table style="margin-top:-12px;">
-
-            <!-- Work -->
-            <tr style="border-bottom:1px solid #e5e5e5;">
-                <!-- IMAGE -->
-                <td>
-                    <img class="workPicture" src="images/thesis_overview.jpg" alt="Thesis overview">
-                </td>
-
-                <!-- TITLE AND INFO -->
-                <td>
-                    <br>
-                    <div id="indexWorkText">
-                        <!-- Title + Link -->
-                        <b><a href="thesis.pdf" onclick="_gaq.push(['_trackEvent', 'Click', 'Thesis (b) Clicked']);">Cool stuff</a></b>
-                        <br>
-                        <i>Ph.D Thesis, 2020</i>
-                    </div>
-                    <br>
-                    <!-- One sentence description -->
-                    <div id="indexWorkText">
-                        A very Valuable Contribution
-                    </div>
-                    <br>
-
-                    <!-- Collaborators -->
-                    <div id="indexWorkText">
-                        Advised by a VIP</a>.
-                    </div>
-                    <br>
-                    <br>
-                </td>
-            </tr>
-        </table>
+            <!-- Collaborators -->
+            <div id="indexWorkText">
+                Advised by a VIP</a>.
+            </div>
+            <br>
+            <br>
+        </td>
+    </tr>
+</table>
 
 
-        <!-- PERSONAL -->
-        <h4>Personal</h4>
-
-        <p> Pen up about yourself. You'll feel better.</p>
-
-      </section>
-    </body>
-
-    <!-- FOOTER -->
-    {% include footer.html %}
-    </div>
-</html>
+<!-- PERSONAL -->
+<h4>Personal</h4>
+<p> Pen up about yourself. You'll feel better.</p>
