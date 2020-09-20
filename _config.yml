@@ -1,0 +1,45 @@
+# Site settings
+title:          "Name Surname"
+description:    "Academic website"
+baseurl:        "/"
+url:            "https://yourwebsite.github.io"
+
+# Author
+author:
+  name:         Name Surname
+  url:          https://yourwebsite.github.io
+  email:        name.surname@polimi.it
+  github:       your_id
+  twitter:      your_id
+  linkedin:     your_id
+  scholar:      your_id
+
+# Analytics
+analytics:
+  provider               : google
+  google:
+    tracking_id          : yourid
+
+contact_note: If you want to discuss about research ideas and opportunities, please drop me an email
+
+# Comments
+disqus_shortname: # put your disqus shortname
+
+# -----------------------------------------------------------------------------
+# Jekyll settings
+# -----------------------------------------------------------------------------
+
+# Build settings
+markdown: kramdown
+# highlighter: pygments
+
+# Includes
+include: ['_pages']
+
+# Assets
+sass:
+  sass_dir:     _sass
+  style:        compressed
+
+enable_anchorjs:    false
+enable_katex:       true

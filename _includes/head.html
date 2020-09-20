@@ -1,7 +1,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Marco Ciccone</title>
+    <title>{{ site.title }}</title>
 
     <link rel="stylesheet" href="stylesheets/styles.css">
     <link rel="stylesheet" href="stylesheets/extra_min_styles.css"">
@@ -18,7 +18,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script>
       var _gaq = _gaq || [];
-      _gaq.push(['_setAccount', 'GOOGLEANALYTICS']);
+      _gaq.push(['_setAccount', "{{ site.analytics.google.google_id }}"]);
       _gaq.push(['_trackPageview']);
 
       (function() {
