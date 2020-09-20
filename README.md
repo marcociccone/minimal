@@ -1,4 +1,4 @@
-# Fork of Minimal Theme
+# Fork of Minimal Theme from David Abel, modified by Marco Ciccone
 
 [Demo the original Theme](http://orderedlist.github.com/minimal/)
 

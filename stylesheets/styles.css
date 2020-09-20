@@ -35,7 +35,8 @@ h3, h4, h5, h6 {
 }
 
 a {
-  color:#39c;
+  /*color:#39c;*/
+  color: #4a9ae1;
   text-decoration:none;
 }
 
@@ -105,7 +106,8 @@ img {
 
 header {
   /*margin-top:100px;*/
-  width:270px;
+  /*background-color: #996633;*/
+  width:px;
   float:left;
   position:fixed;
   -webkit-font-smoothing:subpixel-antialiased;
@@ -131,10 +133,10 @@ hr {
 }
 
 footer {
-  width:270px;
+  width:300px;
   float:left;
-  position:fixed;
-  bottom:50px;
+  position: fixed;
+  margin-top:640px;
   -webkit-font-smoothing:subpixel-antialiased;
 }
 

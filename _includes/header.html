@@ -1,0 +1,46 @@
+<header>
+    <h1 align="middle">Name Surname</h1>
+
+    <!-- Picture + Links + News -->
+    <div align="middle" style="margin-bottom: 10px">
+
+        <!-- Portrait -->
+        <img src="images/portrait.png" alt="Portrait" WIDTH=190 style="margin-bottom: 8px;border-radius: 10px;">
+
+        <div style="margin-bottom: 6px;">name.surname AT polimi DOT it</div>
+
+        <!-- CV -->
+        <a href="cv.pdf" onclick="_gaq.push(['_trackEvent', 'Click', 'CV Clicked']);" style="margin-right:14px;"><i class="ai ai-cv" style="font-size: 32px;"></i>
+        </a>
+
+        <!-- Github -->
+        <a href="https://github.com/USERNAME" onclick="_gaq.push(['_trackEvent', 'Click', 'git Clicked']);" style="margin-right:14px;">
+            <i class="fab fa-github" style="font-size:32px;"></i>
+            <!-- color: #A7A499" -->
+        </a>
+
+        <!-- Scholar -->
+        <a href="https://scholar.google.it/citations?user=USERID" onclick="_gaq.push(['_trackEvent', 'Click', 'Scholar Clicked']);" style="margin-right:14px;">
+            <i class="ai ai-google-scholar big-icon" style="font-size:32px;"></i>
+        </a>
+
+        <!-- Twitter -->
+        <a href="https://twitter.com/USERID" onclick="_gaq.push(['_trackEvent', 'Click', 'Twitter Clicked']);">
+            <i class="fab fa-twitter" style="font-size:32px;"></i>
+        </a>
+        <br>
+        <br>
+    </div>
+
+
+    <!-- Put "nav" here for side bar nav -->
+    <ul class='navbar'>
+    {% for node in site.pages %}
+        {% if page.url == node.url %}
+        <li class="navbar_li" id="selected"><a href="{{node.url}}">{{node.title}}</a></li>
+        {% else %}
+        <li class="navbar_li"><a href="{{node.url}}">{{node.title}}</a></li>
+        {% endif %}
+    {% endfor %}
+    </ul>
+</header>
