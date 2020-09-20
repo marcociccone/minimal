@@ -158,65 +158,6 @@ body
   text-decoration: underline;
 }
 
-
-/* TUTORIAL */
-
-skinnycode
-{
-  font-family: monospace;
-  background:#F8F8FF;
-  border:black dashed 1px;
-  padding:6px;
-  margin-right: auto;
-  margin-left: 20px;
-  margin-bottom: 10px;
-  display:inline-block;
-  max-width:75%;
-}
-
-code
-{
-  font-family: monospace;
-  background:#F8F8FF;
-  border:black dashed 1px;
-  padding:6px;
-  margin-right: auto;
-  margin-left: 20px;
-  margin-bottom: 10px;
-  display:block;
-  max-width:75%;
-}
-
-mathcode
-{
-  font-family: monospace;
-  background:#F8F8FF;
-  border:black dashed 1px;
-  padding:6px;
-  margin-left: 80px;
-  display:inline-block;
-  max-width:60%;
-}
-
-#tutorialP
-{
-  max-width:80%;
-}
-
-#definition
-{
-  margin-left: 30px;
-  margin-bottom: 20px;
-  margin-right: 300px;
-  text-align: left;
-  font-family: serif;
-  padding: 10px;
-  max-width: 90%;
-  min-width: 180px;
-  border-style: solid;
-  border-width: 2px;
-}
-
 /* -------------- */
 /* --- MOBILE --- */
 /* -------------- */

@@ -1,10 +1,14 @@
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{{ site.title }}</title>
 
     <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/extra_min_styles.css"">
+    <link rel="stylesheet" href="stylesheets/extra_min_styles.css">
+    <!-- <link rel="stylesheet" href="stylesheets/pygments-nord-syntax.css"> -->
+    <!-- <link rel="stylesheet" href="stylesheets/pygments-github-syntax.css"> -->
+    <link rel="stylesheet" href="stylesheets/syntax.css">
     <meta name="viewport" content="width=device-width">
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -13,7 +17,6 @@
     <!-- Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.0/css/academicons.min.css" integrity="sha512-W4yqoT1+8NLkinBLBZko+dFB2ZbHsYLDdr50VElllRcNt2Q4/GSs6u71UHKxB7S6JEMCp5Ve4xjh3eGQl/HRvg==" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
-    <link rel="stylesheet" href="https://i.icomoon.io/public/temp/57136724af/UntitledProject/style-svg.css">
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script>
@@ -27,4 +30,16 @@
         var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
       })();
     </script>
+
+    <!-- MathJax support-->
+    {% if page.usemathjax %}
+      <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+        TeX: { equationNumbers: { autoNumber: "AMS" } }
+        });
+      </script>
+      <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+    {% endif %}
 </head>

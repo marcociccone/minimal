@@ -31,7 +31,11 @@ disqus_shortname: # put your disqus shortname
 
 # Build settings
 markdown: kramdown
-# highlighter: pygments
+hightlighter: rouge
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  math_engine: mathjax
 
 # Includes
 include: ['_pages']
@@ -42,4 +46,4 @@ sass:
   style:        compressed
 
 enable_anchorjs:    false
-enable_katex:       true
+enable_katex:       false
